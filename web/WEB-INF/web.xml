@@ -20,6 +20,20 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>URLParameter</servlet-name>
+        <servlet-class>gui.URLParameter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>URLParameter</servlet-name>
+        <url-pattern>/URLParameter</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <servlet>
         <servlet-name>Login</servlet-name>
         <jsp-file>/login.jsp</jsp-file>
     </servlet>
@@ -28,6 +42,42 @@
         <servlet-name>Login</servlet-name>
         <url-pattern>/loginpage</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>parameters</servlet-name>
+        <jsp-file>/parameters.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>parameters</servlet-name>
+        <url-pattern>/parameters</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>manipulation</servlet-name>
+        <jsp-file>/manipulation.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>manipulation</servlet-name>
+        <url-pattern>/manipulation</url-pattern>
+    </servlet-mapping>
+
+
+    <!--
+    <servlet>
+        <servlet-name>includes</servlet-name>
+        <jsp-file>/includes.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>includes</servlet-name>
+        <url-pattern>/includes</url-pattern>
+    </servlet-mapping>
+    -->
+
+
+
 
 
 

@@ -2,22 +2,23 @@
   Created by IntelliJ IDEA.
   User: simon
   Date: 10/11/15
-  Time: 4:53 PM
+  Time: 9:57 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title></title>
-  </head>
-  <body>
-  <%@ page import="java.util.Date, gui.*"%>
+</head>
+<body>
 
-  <%= new Date() %>
-  <%
-  TextOutput textOut = new TextOutput();
+Hello
+<%
 
-  out.println(textOut.getInfo());
-  %>
-  </body>
+//  request.getRequestDispatcher("index.jsp").forward(request, response);
+
+  response.sendRedirect("index.jsp");
+%>
+
+</body>
 </html>

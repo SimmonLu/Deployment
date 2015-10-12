@@ -1,4 +1,4 @@
-package demo;
+package gui;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,13 +11,19 @@ import java.io.PrintWriter;
 /**
  * Created by simon on 10/11/15.
  */
-public class Hello extends HttpServlet {
+public class URLParameter extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String user = request.getParameter("user");
+        String id = request.getParameter("id");
+
         PrintWriter out = response.getWriter();
-        out.println("Hello");
+        out.println("<html>");
+        out.println("The 'user' parameter from url is " + user);
+        out.println("The 'id' parameter from url is " + id);
+        out.println("</html>");
     }
 }
